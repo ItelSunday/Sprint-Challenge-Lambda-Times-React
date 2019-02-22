@@ -24,14 +24,14 @@ const Tabs = props => {
         
       </div>
     </div>
-  );
+  ); 
 };
 
 // Make sure to use PropTypes to validate your types!
 Tabs.propTypes = {
   tabs: PropTypes.arrayOf(PropTypes.string),
   selectedTabHandler: PropTypes.func,
-  selectTab: PropTypes.string,
+  selectedTab: PropTypes.string,
 }
 
 

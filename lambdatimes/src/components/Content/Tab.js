@@ -5,7 +5,8 @@ const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
-  return (
+    console.log(props.tab)
+    return (
     <div
     //   className={''}
     //   onClick={() => {
@@ -22,7 +23,7 @@ const Tab = props => {
 
 // Make sure you include PropTypes on your props.
 Tab.propTypes = {
-  tabs: PropTypes.string,
+  tab: PropTypes.string,
   selectedTabHandler: PropTypes.func,
   selectTab: PropTypes.string,
 }
